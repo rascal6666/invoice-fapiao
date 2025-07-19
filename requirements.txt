@@ -1,0 +1,6 @@
+tkinter
+openpyxl
+pdfplumber
+requests
+markdown
+tkinterweb

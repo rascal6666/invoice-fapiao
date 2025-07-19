@@ -238,22 +238,33 @@ DEEP_SEEK_API_HOST = 'https://api.deepseek.com'
 ## 项目结构
 
 ```
-wkm-invoice-recognizer/
-├── entry.py              # 主要功能模块
-├── gui_app.py            # GUI应用程序
-├── example_usage.py      # 使用示例
-├── test_cache.py         # 缓存功能测试
-├── test_error_handling.py # 错误处理测试
-├── build_exe.py          # 打包脚本
-├── create_icon.py        # 图标创建脚本
-├── run_gui.bat           # GUI启动脚本
-├── requirements.txt      # 依赖包列表
-├── README.md            # 说明文档
-├── pdf_files/           # PDF文件目录（需要创建）
-├── cache_res_*.json     # 缓存文件（自动生成）
-└── dist/                # 打包输出目录
-    └── 发票识别器.exe    # 可执行文件
+项目目录/
+├── gui_app.py              # GUI主程序
+├── entry.py                # 核心处理逻辑
+├── requirements.txt        # 依赖包列表
+├── .gitignore             # Git忽略文件配置
+├── README.md              # 项目说明文档
+├── 使用指南.md            # 详细使用指南
+├── build_exe.py           # 可执行文件构建脚本
+├── create_icon.py         # 图标生成脚本
+├── run_gui.bat            # Windows启动脚本
+└── dist/                  # 打包输出目录
+    └── 发票识别器.exe     # 可执行文件
 ```
+
+## 版本控制
+
+### Git配置
+项目包含完整的`.gitignore`文件，自动忽略以下文件：
+- **Python缓存文件**：`__pycache__/`、`*.pyc`
+- **虚拟环境**：`venv/`、`.env`
+- **IDE配置**：`.idea/`、`.vscode/`
+- **系统文件**：`.DS_Store`、`Thumbs.db`
+- **项目特定文件**：
+  - API密钥配置：`~/.invoice_recognizer/`
+  - 缓存文件：`cache_res_*.json`
+  - 生成的Excel文件：`*.xlsx`
+  - 测试文件：`test_*.py`、`demo_*.py`
 
 ## 许可证
 
