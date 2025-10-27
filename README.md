@@ -23,7 +23,6 @@
 
 ### 依赖包
 ```
-tkinter
 openpyxl
 pdfplumber
 requests
@@ -38,6 +37,7 @@ requests
 
 ```bash
 pip install -r requirements.txt
+python -m tkinter
 ```
 
 ## 使用方法
