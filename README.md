@@ -23,6 +23,7 @@
 
 ### 依赖包
 ```
+openai
 openpyxl
 pdfplumber
 requests
